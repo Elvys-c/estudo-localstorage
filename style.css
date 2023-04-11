@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 25px 0px;
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.coluna {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.coluna-interna {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+.btn{
+    display: block;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+    margin: 10px 0px;    
+}
+
+.divForm{
+    margin: 5px 0px;
+}
+
+.divPorteAnimal{
+    display: inline-block; 
+}
+
+.btn-send{
+    border: 1px solid #38b000;
+    background-color: #38b000;
+}
+
+.btn-show{
+    border: 1px solid #4361ee;
+    background-color: #4361ee;
+}
+
+.btn-clear{
+    border: 1px solid #e5383b;
+    background-color: #e5383b;
+}

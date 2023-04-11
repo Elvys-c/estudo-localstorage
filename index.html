@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Local Storage</title>
+  </head>
+  <body onload="feedColumns()">
+    
+    <header>Header...</header>
+    
+    <main>
+      <div class="coluna">
+        <form id="formDados" name="formDados">
+          
+          <div class="divForm">
+            <label for="inputTipoAnimal">Tipo Animal:</label>
+            <input type="text" id="inputTipoAnimal" name="inputTipoAnimal">
+          </div>
+          
+          <div class="divForm">
+            <label for="inputNome">Nome do Animal:</label>
+            <input type="text" id="inputNome" name="inputNome">
+          </div>
+  
+          <div class="">
+            <div class="divPorteAnimal">
+              <p>Porte do animal:</p>
+            </div>
+            
+            <div class="divPorteAnimal">
+              <input type="radio" name="inputPorte" id="pequeno" value="Pequeno">
+              <label for="pequeno">Pequeno</label>
+            
+              <input type="radio" name="inputPorte" id="medio" value="Medio">
+              <label for="medio">Medio</label>
+              
+              <input type="radio" name="inputPorte" id="grande" value="Grande">
+              <label for="grande">Grande</label>
+            </div>
+          </div>
+  
+  
+        </form>
+
+        <button class="btn btn-send" onclick="sendInputValue()">Enviar</button>
+        <button class="btn btn-show" onclick="showAllData()">Mostrar Dados Locais</button>
+        <button class="btn btn-clear" onclick="clearAllData()">Limpar Dados</button>
+      </div>
+      
+      <div class="coluna">
+        <div class="coluna-interna">
+          <h3>Tipo</h3>
+        </div>
+        <div class="coluna-interna">
+          <h3>Nome</h3>
+        </div>
+        <div class="coluna-interna">
+          <h3>Porte</h3>
+        </div>
+        <div class="coluna-interna" id="coluna-tipo">
+        </div>
+        <div class="coluna-interna" id="coluna-nome">
+        </div>
+        <div class="coluna-interna" id="coluna-porte">
+        </div>
+      </div>
+
+    </main>
+    
+    <footer>Footer...</footer>
+    
+    <script src="script.js">
+      // window.onload = feedLi();
+    </script>
+  </body>
+</html>
